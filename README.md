@@ -53,7 +53,7 @@ p008\_manyevalも、2587個の全局面に関するp007の出力ファイルが�
 
 ### 5
 
-check\_contradiction\_tasklist\_e50result.pyについて説明します。そもそも最初に2587個の50マス空き局面に注目してそれらの値を予想したときに、「初期局面が引き分けであることを証明するためにはこれらの50マス空き局面の各々のgame-theoretic valueがある範囲内にあることが証明される必要がある」という下界と上界を求めました。check\_contradiction\_tasklist\_e50result.pyは、result\_e50[-OX]{64}\\.csv　をすべて読み込んで、その最初の予想と実際に証明された上界・下界の範囲との間に矛盾があるか無いかを調べるスクリプトです。
+check\_contradiction\_tasklist\_e50result.pyについて説明します。そもそも最初に2587個の50マス空き局面に注目してそれらの値を予想したときに、「初期局面が引き分けであることを証明するためにはこれらの50マス空き局面の各々のgame-theoretic valueがある範囲内にあることが証明される必要がある」という下界と上界を求めました。check\_contradiction\_tasklist\_e50result.pyは、 p006の出力ファイルである result\_e50[-OX]{64}\\.csv をすべて読み込んで、その最初の予想と実際に証明された上界・下界の範囲との間に矛盾があるか無いかを調べるスクリプトです。
 
 ### 6
 
@@ -66,6 +66,22 @@ convert-abtree-all.pyは、2587個の全局面に関するp007の出力ファイ
 ### 8
 
 reversi\_player.pyは、実際にall\_result\_abtree\_encoded\_sorted\_unique.csvとEdax\_mod2の実行ファイルとを使って、絶対に負けないプレイヤーとしてリバーシをプレイするスクリプトです。
+
+#### 8.1 reversi\_player.pyを実行するための準備の手順まとめ
+
+1. 解析結果のファイルを https://doi.org/10.6084/m9.figshare.24420619 からダウンロードして、中身の knowledge\_[-OX]{64}\\.csv といったファイル名のcsvファイル2587個を本リポジトリのファイルと同じディレクトリに入れて下さい。
+1. 次の手順で all\_p007.py と convert-abtree-all.py とを実行するときに合計300GB程度のテキストファイルが出力されますので、ストレージに余裕があることを確認して下さい。
+1. 以下を実行して下さい：
+
+    ```
+    $ make
+    $ bunzip2 -k opening_book_freq.csv.bz2
+    $ sh prep-edax-and-eval.sh
+    $ python3 all_p007.py
+    $ python3 make_50_book.py
+    $ python3 convert-abtree-all.py
+    ```
+1. all\_result\_abtree\_encoded\_sorted\_unique.csv と Edax\_mod2 が得られていれば準備完了です。
 
 ## 求解の再現について
 
