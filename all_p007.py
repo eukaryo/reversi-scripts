@@ -120,7 +120,7 @@ def solve_py():
 
 if __name__ == "__main__":
 
-    N_WORKERS = max(1, len(os.sched_getaffinity(0)))
+    N_WORKERS = max(1, os.cpu_count())
 
     tasklist = read_empty50_tasklist_edax_knowledge()
 
