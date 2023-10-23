@@ -65,8 +65,7 @@ convert-abtree-all.pyは、2587個の全局面に関するp007の出力ファイ
 
 ### 8
 
-reversi_player.pyは、実際にall_result_abtree_encoded.csvを昇順ソートおよび重複除去したファイル（all_result_abtree_encoded_sorted_unique.csvというファイル名であることを仮定しています）とEdax_mod2の実行ファイルを使って、絶対に負けないプレイヤーとしてゲームをプレイするスクリプトです。
-
+reversi_player.pyは、実際にall_result_abtree_encoded.csvを昇順ソートおよび重複除去したファイル（all_result_abtree_encoded_sorted_unique.csvというファイル名であることを仮定しています）とEdax_mod2の実行ファイルを使って、絶対に負けないプレイヤーとしてリバーシをプレイするスクリプトです。
 
 ## 求解の再現について
 
