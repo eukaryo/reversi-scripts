@@ -10,7 +10,7 @@
 スコアの上界、下界に関しては、深さ36で強さ100のときには真の理論値に対する上界と下界です。強さ100でない場合は同じ値が入っていて、予測値を意味します。
 Edaxが出力した探索局面数に関しては、正の値のときはEdaxに与えたコマンドラインオプションが
 ```
-$ ./Edax\_mod2 -solve hoge.obf -level 60 -n 1 -hash-table-size 23 -verbose 2 -alpha -3 -beta 3 -width 200
+$ ./Edax_mod2 -solve hoge.obf -level 60 -n 1 -hash-table-size 23 -verbose 2 -alpha -3 -beta 3 -width 200
 ```
 といった感じです。このオプションで投げ直せば全く同じ探索局面数を返すはずです。（再現性を重視しました）
 負の値はこれ以外のコマンドラインオプションを使って計算したことを意味します。並列化したり、alphaとbetaの値が異なっていたりします。
@@ -24,7 +24,7 @@ $ ./Edax\_mod2 -solve hoge.obf -level 60 -n 1 -hash-table-size 23 -verbose 2 -al
 まず、
 ```
 $ make
-$ bunzip2 -k opening\_book\_freq.csv.bz2
+$ bunzip2 -k opening_book_freq.csv.bz2
 $ sh prep-edax-and-eval.sh
 ```
 をして下さい。makeによって4つの実行ファイルができます。p006, p007, solve33, p008\_manyevalの4つです。
