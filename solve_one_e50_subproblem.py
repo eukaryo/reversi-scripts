@@ -6,8 +6,6 @@ import sys
 # from reversi_misc import *
 from reversi_solver_misc import read_empty50_tasklist_edax_knowledge
 
-# tasklistのうち、ほかのknowledgeに書いてあるやつを探して、あれば自分のknowledgeに書き写したうえでtasklistから除去する。
-
 
 def drop_duplicate_knowledge(problem_obf):
     # knowledgeファイルに完全一致する行が含まれている場合は除去する。
