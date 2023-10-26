@@ -1,4 +1,4 @@
-# Othello-scripts
+# reversi-scripts
 
 解析結果のファイルは https://doi.org/10.6084/m9.figshare.24420619 からダウンロードできます。ファイル内には knowledge\_[-OX]{64}\\.csv といったファイル名のcsvファイルが2587個あります。それらを本リポジトリのファイルと同じディレクトリに入れて下さい。
 
