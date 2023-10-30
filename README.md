@@ -1,6 +1,6 @@
 # reversi-scripts
 
-The files containing the analysis results can be downloaded from https://doi.org/10.6084/m9.figshare.24420619 . Inside, there are 2587 CSV files named like knowledge\_[-OX]{64}\\.csv . Please place them in the same directory as the files in this repository.
+The files containing the analysis results can be downloaded from https://doi.org/10.6084/m9.figshare.24420619 . Inside, there are 2587 csv files named like knowledge\_[-OX]{64}\\.csv . Please place them in the same directory as the files in this repository.
 
 <!--
 解析結果のファイルは https://doi.org/10.6084/m9.figshare.24420619 からダウンロードできます。そのなかには knowledge\_[-OX]{64}\\.csv といったファイル名のcsvファイルが2587個あります。それらを本リポジトリのファイルと同じディレクトリに入れて下さい。
