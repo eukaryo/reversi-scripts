@@ -1,5 +1,11 @@
 # reversi-scripts
 
+cf:
+
+- Othello is Solved  http://arxiv.org/abs/2310.19387
+
+- https://github.com/eukaryo/edax-reversi-AVX-v446mod2
+
 The files containing the analysis results can be downloaded from https://doi.org/10.6084/m9.figshare.24420619 . Inside, there are 2587 csv files named like knowledge\_[-OX]{64}\\.csv . Please place them in the same directory as the files in this repository.
 
 <!--
