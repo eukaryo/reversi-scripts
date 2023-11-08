@@ -54,7 +54,7 @@ if __name__ == "__main__":
             print(f"processing {filename} : {i+1} / {len(filenames)}", flush=True)
             for line in get_single_abtree_encoded(filename):
                 f.write(line + "\n")
-    print("start: sort and uniquefy the output file")
+    print("start: sort and uniquely the output file")
     subprocess.run(
         [
             "sort",
@@ -64,4 +64,4 @@ if __name__ == "__main__":
             "all_result_abtree_encoded_sorted_unique.csv",
         ]
     )
-    print("finish: sort and uniquefy the output file")
+    print("finish: sort and uniquely the output file")
