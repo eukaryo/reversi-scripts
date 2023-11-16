@@ -261,7 +261,7 @@ def uinttest_obf_bitboard_conversion(seed, num_iter):
 
 def gamerecord_to_obf(gamerecord: str) -> str:
     assert re.fullmatch(r"([a-hA-H][1-8]){0,60}", gamerecord) is not None
-    black, white = obf_to_bitboards(initial_position("cross"))
+    black, white = initial_position("cross")
     player_is_black = True
     moves = [gamerecord[i : i + 2].lower() for i in range(0, len(gamerecord), 2)]
     for move in moves:
